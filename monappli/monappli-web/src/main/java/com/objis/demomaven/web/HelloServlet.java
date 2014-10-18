@@ -1,19 +1,21 @@
 package com.objis.demomaven.web;
 
 import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+/*hhhh
+ gggg*/
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-
-public class HelloServlet extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
- protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+public class HelloServlet
+extends javax.servlet.http.HttpServlet
+implements javax.servlet.Servlet {
+ protected void doGet(HttpServletRequest request,
+ HttpServletResponse response)
  throws ServletException, IOException {
    response.setContentType("text/html");
    PrintWriter out = response.getWriter();
    out.println("Projet Maven la centrale-web : Servlet Lanc�e");
    out.flush();
    out.close();
- }                                  
+ }                                 
 }
